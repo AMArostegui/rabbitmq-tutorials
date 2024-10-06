@@ -23,8 +23,9 @@ consumer.Received += (model, ea) =>
     var message = Encoding.UTF8.GetString(body);
     Console.WriteLine($" [x] Received {message}");
 
-    int dots = message.Split('.').Length - 1;
-    Thread.Sleep(dots * 1000);
+    //int dots = message.Split('.').Length - 1;
+    //Thread.Sleep(dots * 5000);
+    Thread.Sleep(5000);
 
     Console.WriteLine(" [x] Done");
 

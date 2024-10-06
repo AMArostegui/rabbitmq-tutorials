@@ -15,8 +15,8 @@ channel.BasicPublish(exchange: "logs",
                      body: body);
 Console.WriteLine($" [x] Sent {message}");
 
-Console.WriteLine(" Press [enter] to exit.");
-Console.ReadLine();
+//Console.WriteLine(" Press [enter] to exit.");
+//Console.ReadLine();
 
 static string GetMessage(string[] args)
 {
